@@ -1,5 +1,8 @@
 <?php
 
+use App\Models\StaticTitre;
+use App\Models\UpDown;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,7 +17,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $upDowns = UpDown::all();
+    $statics = StaticTitre::all();
+
+    return view('welcome', compact('upDowns', 'statics')) ;
 })->name('home');
 
 
