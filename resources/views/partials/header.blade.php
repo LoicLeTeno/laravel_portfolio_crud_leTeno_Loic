@@ -25,10 +25,6 @@
                     </li>
 
                     <li>
-                        <a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a>
-                    </li>
-
-                    <li>
                         <a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a>
                     </li>
 

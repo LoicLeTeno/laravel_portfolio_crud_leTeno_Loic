@@ -15,4 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
+
+
+Route::get('/backOffice', function () {
+    return view('backOffice.admin');
+})->name('back');
+
+
+Route::get('/details', function () {
+    return view('pages.portfolio-details');
+})->name('details');
