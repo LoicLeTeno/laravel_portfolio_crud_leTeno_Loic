@@ -66,14 +66,23 @@
                                     <i class="icofont-rounded-right"></i> <strong>{{ $about->p_freelance }}</strong>
                                     {{ $about->freelance }}
                                 </li>
-
                             </ul>
                         </div>
+
+
+                        
                     </div>
                 @endforeach
+                    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
 
                 <p>{{ $static->about_endText }}</p>
             </div>
         </div>
     </div>
+
+
 </section><!-- End About Section -->

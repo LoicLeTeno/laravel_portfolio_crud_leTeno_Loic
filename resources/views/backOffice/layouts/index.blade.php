@@ -39,11 +39,11 @@
     <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
 
-    @include('partials.header')
+    @include('backOffice.partials.header')
 
-    @yield('content')
+    @yield('back-content')
 
-    @include('partials.footer')
+    @include('backOffice.partials.footer')
 
 
     <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>

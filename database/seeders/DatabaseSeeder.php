@@ -18,6 +18,12 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UpDownSeeder::class,
             StaticTitreSeeder::class,
+            AboutSeeder::class,
+            FactsSeeder::class,
+            SkillsSeeder::class,
+            PortfolioSeeder::class,
+            ServiceSeeder::class,
+            ContactSeeder::class
         ]);
     }
 }
