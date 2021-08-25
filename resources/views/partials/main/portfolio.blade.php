@@ -2,17 +2,17 @@
         <section id="portfolio" class="portfolio section-bg">
             <div class="container">
                 <div class="section-title">
-                    <h2>{{ $static->portfolio_titre }}</h2>
-                    <p>{{ $static->portfolio_text }}</p>
+                    <h2>{{ $statics->portfolio_titre }}</h2>
+                    <p>{{ $statics->portfolio_text }}</p>
                 </div>
 
                 <div class="row" data-aos="fade-up">
                     <div class="col-lg-12 d-flex justify-content-center">
                         <ul id="portfolio-flters">
-                            <li data-filter="*" class="filter-active">{{ $static->filter_all }}</li>
-                            <li data-filter=".{{ $static->filter_1 }}">{{ $static->filter_1_nom }}</li>
-                            <li data-filter=".{{ $static->filter_2 }}">{{ $static->filter_2_nom }}</li>
-                            <li data-filter=".{{ $static->filter_3 }}">{{ $static->filter_3_nom }}</li>
+                            <li data-filter="*" class="filter-active">{{ $statics->filter_all }}</li>
+                            <li data-filter=".{{ $statics->filter_1 }}">{{ $statics->filter_1_nom }}</li>
+                            <li data-filter=".{{ $statics->filter_2 }}">{{ $statics->filter_2_nom }}</li>
+                            <li data-filter=".{{ $statics->filter_3 }}">{{ $statics->filter_3_nom }}</li>
                         </ul>
                     </div>
                 </div>

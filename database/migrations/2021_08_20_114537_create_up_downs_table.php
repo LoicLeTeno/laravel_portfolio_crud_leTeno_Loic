@@ -55,8 +55,8 @@ class CreateUpDownsTable extends Migration
             $table->string('copyright');
             $table->string('suite_copyright');
 
-            $table->string('designe');
-            $table->string('lien_designe');
+            $table->string('design');
+            $table->string('lien_design');
             $table->string('nom_design');
 
             $table->timestamps();

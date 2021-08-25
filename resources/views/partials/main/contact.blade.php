@@ -2,37 +2,35 @@
 <section id="contact" class="contact">
     <div class="container">
         <div class="section-title">
-            <h2>{{ $static->contact_titre }}</h2>
+            <h2>{{ $statics->contact_titre }}</h2>
 
-            <p>{{ $static->contact_text }}</p>
+            <p>{{ $statics->contact_text }}</p>
         </div>
 
         <div class="row" data-aos="fade-in">
             <div class="col-lg-5 d-flex align-items-stretch">
-                @foreach ($contacts as $contact)
-                    <div class="info">
-                        <div class="address">
-                            <i class="icofont-google-map"></i>
-                            <h4>{{ $contact->titre_location }}</h4>
-                            <p>{{ $contact->location }}</p>
-                        </div>
-
-                        <div class="email">
-                            <i class="icofont-envelope"></i>
-                            <h4>{{ $contact->titre_email }}</h4>
-                            <p>{{ $contact->email }}</p>
-                        </div>
-
-                        <div class="phone">
-                            <i class="icofont-phone"></i>
-                            <h4>{{ $contact->titre_phone }}</h4>
-                            <p>{{ $contact->phone }}</p>
-                        </div>
-
-                        <iframe src="{{ $contact->src_localisation }}" frameborder="0"
-                            style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+                <div class="info">
+                    <div class="address">
+                        <i class="icofont-google-map"></i>
+                        <h4>{{ $contacts->titre_location }}</h4>
+                        <p>{{ $contacts->location }}</p>
                     </div>
-                @endforeach
+
+                    <div class="email">
+                        <i class="icofont-envelope"></i>
+                        <h4>{{ $contacts->titre_email }}</h4>
+                        <p>{{ $contacts->email }}</p>
+                    </div>
+
+                    <div class="phone">
+                        <i class="icofont-phone"></i>
+                        <h4>{{ $contacts->titre_phone }}</h4>
+                        <p>{{ $contacts->phone }}</p>
+                    </div>
+
+                    <iframe src="{{ $contacts->src_localisation }}" frameborder="0"
+                        style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+                </div>
             </div>
 
             <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">

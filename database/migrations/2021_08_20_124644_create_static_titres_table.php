@@ -25,6 +25,11 @@ class CreateStaticTitresTable extends Migration
             $table->string('user_desp_3');
             $table->string('user_desp_4');
 
+            /*
+            $table->string("identifiant");
+            $table->string("value");
+            */
+
 
             // TITRE section: About
             $table->string('about_titre', 30);

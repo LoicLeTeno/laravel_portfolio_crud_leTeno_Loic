@@ -29,28 +29,28 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $upDowns = UpDown::all();
-    $statics = StaticTitre::all();
-    $abouts = About::all();
+    $upDowns = UpDown::first();
+    $statics = StaticTitre::first(); 
+    $abouts = About::first();
     $facts = Facts::all();
     $skills = Skills::all();
     $portfolios = Portfolio::all();
     $services = Service::all();
-    $contacts = Contact::all();
+    $contacts = Contact::first();
 
     return view('welcome', compact('upDowns', 'statics', 'abouts', 'facts', 'skills', 'portfolios', 'services', 'contacts')) ;
 })->name('home');
 
 
 Route::get('/backOffice', function () {
-    $upDowns = UpDown::all();
-    $statics = StaticTitre::all();
-    $abouts = About::all();
+    $upDowns = UpDown::first();
+    $statics = StaticTitre::first(); 
+    $abouts = About::first();
     $facts = Facts::all();
     $skills = Skills::all();
     $portfolios = Portfolio::all();
     $services = Service::all();
-    $contacts = Contact::all();
+    $contacts = Contact::first();
 
     return view('backOffice.admin', compact('upDowns', 'statics', 'abouts', 'facts', 'skills', 'portfolios', 'services', 'contacts')) ;
 })->name('home');
@@ -62,9 +62,11 @@ Route::get('/details', function () {
 
 
 // RESSOURCE
-Route::resource('abouts', AboutController::class);
+Route::resource('about', AboutController::class);
 Route::resource('facts', FactsController::class);
 Route::resource('skills', SkillsController::class);
-Route::resource('portfolios', PortfolioController::class);
+Route::resource('portfolio', PortfolioController::class);
 Route::resource('services', ServiceController::class);
-Route::resource('contacts', ContactController::class);
+Route::resource('contact', ContactController::class);
+
+

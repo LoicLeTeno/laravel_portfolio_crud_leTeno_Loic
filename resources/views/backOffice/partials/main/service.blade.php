@@ -2,8 +2,8 @@
         <section id="services" class="services">
             <div class="container">
                 <div class="section-title">
-                    <h2>{{ $static->service_titre }}</h2>
-                    <p>{{ $static->service_text }}</p>
+                    <h2>{{ $statics->service_titre }}</h2>
+                    <p>{{ $statics->service_text }}</p>
                 </div>
 
                 <div class="row">

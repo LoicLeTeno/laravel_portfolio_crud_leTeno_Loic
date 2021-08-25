@@ -2,9 +2,9 @@
 <section id="facts" class="facts">
     <div class="container">
         <div class="section-title">
-            <h2>{{ $static->facts_titre }}</h2>
+            <h2>{{ $statics->facts_titre }}</h2>
 
-            <p>{{ $static->facts_text }}</p>
+            <p>{{ $statics->facts_text }}</p>
         </div>
 
         <div class="row no-gutters">

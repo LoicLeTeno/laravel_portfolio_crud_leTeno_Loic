@@ -1,14 +1,13 @@
 @extends('layouts.index')
 
 @section('content')
-    @foreach ($statics as $static)
         <!-- ======= Hero Section ======= -->
         <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
 
             <div class="hero-container" data-aos="fade-in">
-                <h1>{{ $static->user_titre }}</h1>
-                <p>{{ $static->user_p }} <span class="typed"
-                        data-typed-items="{{ $static->user_desp_1 }}, {{ $static->user_desp_2 }}, {{ $static->user_desp_3 }}, {{ $static->user_desp_4 }}"></span>
+                <h1>{{ $statics->user_titre }}</h1>
+                <p>{{ $statics->user_p }} <span class="typed"
+                        data-typed-items="{{ $statics->user_desp_1 }}, {{ $statics->user_desp_2 }}, {{ $statics->user_desp_3 }}, {{ $statics->user_desp_4 }}"></span>
                 </p>
             </div>
 
@@ -27,5 +26,4 @@
 
             @include('partials.main.contact')
         </main>
-    @endforeach
 @endsection

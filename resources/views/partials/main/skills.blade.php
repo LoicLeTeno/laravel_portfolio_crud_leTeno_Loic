@@ -2,9 +2,9 @@
 <section id="skills" class="skills section-bg">
     <div class="container">
         <div class="section-title">
-            <h2>{{ $static->skills_titre }}</h2>
+            <h2>{{ $statics->skills_titre }}</h2>
 
-            <p>{{ $static->skills_text }}</p>
+            <p>{{ $statics->skills_text }}</p>
         </div>
 
         <div class="row skills-content">

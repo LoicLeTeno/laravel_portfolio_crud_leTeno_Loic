@@ -55,10 +55,9 @@ class UpDownSeeder extends Seeder
                 'copyright' => "© Copyright",
                 'suite_copyright' => "iPortfolio",
     
-                'designe' => "Designed by",
-                'lien_designe' => "https://bootstrapmade.com/",
+                'design' => "Designed by",
+                'lien_design' => "https://bootstrapmade.com/",
                 'nom_design' => "BootstrapMade",
-
             ]
         ]);
     }

@@ -86,7 +86,7 @@ class AboutController extends Controller
     {
         $edit = About::find($id);
 
-        return redirect('back', compact('edit'));
+        return view('backOffice.partials.edit.modal-about', compact('edit'));
     }
 
     /**
